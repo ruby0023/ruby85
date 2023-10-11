@@ -3,8 +3,8 @@
   <reporter-output>
   </reporter-output>
   <suite started-at="2023-10-09T00:22:59 IST" name="Default suite" finished-at="2023-10-09T00:23:52 IST" duration-ms="52527">
-    <groups>
-    </groups>
+  <groups>
+   </groups>
     <test started-at="2023-10-09T00:22:59 IST" name="Default test" finished-at="2023-10-09T00:23:52 IST" duration-ms="52527">
       <class name="seleniumtest1.Reviewpagetest">
         <test-method signature="open_url()[pri:0, instance:seleniumtest1.Reviewpagetest@48f2bd5b]" started-at="2023-10-09T00:22:59 IST" name="open_url" finished-at="2023-10-09T00:23:19 IST" duration-ms="20034" status="PASS">
