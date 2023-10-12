@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumtest1.Reviewpagetest">
+      <class name="seleniumtest1.Menumanagement">
         <methods>
-          <include name="cart_checkout"/>
+          <include name="productadd"/>
         </methods>
-      </class> <!-- seleniumtest1.Reviewpagetest -->
+      </class> <!-- seleniumtest1.Menumanagement -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

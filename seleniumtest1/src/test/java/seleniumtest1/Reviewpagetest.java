@@ -30,7 +30,7 @@ public class Reviewpagetest {
 		 Thread.sleep(1000);
 		
 		 driver.findElement(By.xpath("//a[normalize-space()='Tap to Start']")).click();
-		 Thread.sleep(5000);
+		 Thread.sleep(3000);
 		 driver.findElement(By.xpath("//label[normalize-space()='Night']")).click();
 		 Thread.sleep(1000);
 		 driver.findElement(By.xpath("//*[@id=\"tabs-links-full\"]/li[8]/a")).click();
@@ -59,32 +59,26 @@ public class Reviewpagetest {
 		  driver.findElement(By.xpath("//a[@class='full-version-footer-close']//i[@class='fa fa-chevron-circle-up']")).click(); 
 	  }
 	  
-	 /* @Test(priority=2)
+	  @Test(priority=2)
 	  public void cart_value() throws InterruptedException {
-		  
-		  //driver.get("https://ellmenusdev.com/menu-friespy");
+		 
+		 
 		  driver.findElement(By.xpath("//div[contains(@class,'open-product-summary item-bx item-list')]//a[@class='search_item'][normalize-space()='Friespy chicken large']")).click();
 		  Thread.sleep(1000);
 	  driver.findElement(By.xpath("//span[normalize-space()='Add']")).click();
 
-		Thread.sleep(2000);
-		  driver.findElement(By.xpath("//div[@class='ion-ios-cart']")).click(); 
-		  Thread.sleep(3000); 
+		Thread.sleep(5000);
+		 driver.findElement(By.xpath("//*[@id=\"cart-badge-count\"]")).click();
+		  //driver.findElement(By.xpath("//div[@class='ion-ios-cart']")).click();
+		  Thread.sleep(10000);
+		  driver.findElement(By.xpath("//*[@id=\"menu-right-content\"]/div/div/div[2]/a")).click(); 
 	  }
-	  
-	  @Test(priority=3)  
-	  public void cart_checkout() throws InterruptedException {
-		  Thread.sleep(3000); 
-		 driver.get("https://ellmenusdev.com/view-cart");
-		  Thread.sleep(3000);
-		 driver.findElement(By.xpath("//a[normalize-space()='Checkout']")).click();
-		  Thread.sleep(5000);
-		
-	  }
-	 @Test(priority=4) 
+
+	 
+	 @Test(priority=3) 
 	 public void cart_payment() throws InterruptedException	{  
 	
-	 
+		
 	driver.get("https://ellmenusdev.com/paymentoption/");
 	Thread.sleep(5000);
 	 driver.findElement(By.xpath("(//input[@id='first_name'])[2]")).sendKeys("Ruby");
@@ -94,9 +88,9 @@ public class Reviewpagetest {
 	  Thread.sleep(1000);
 	driver.findElement(By.xpath("//ins[@class='iCheck-helper']")).click();
 	Thread.sleep(3000);
-	driver.findElement(By.xpath("//a[normalize-space()='Place Order']")).click();*/
+	driver.findElement(By.xpath("//a[normalize-space()='Place Order']")).click();
 }
-
+	 }
 	
 
 
