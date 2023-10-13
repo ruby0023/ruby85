@@ -2,12 +2,21 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
+
   <suite started-at="2023-10-13T00:18:57 IST" name="Default suite" finished-at="2023-10-13T00:20:03 IST" duration-ms="65799">
     <groups>
     </groups>
     <test started-at="2023-10-13T00:18:57 IST" name="Default test" finished-at="2023-10-13T00:20:03 IST" duration-ms="65799">
       <class name="seleniumtest1.Menumanagement">
         <test-method signature="open_url()[pri:0, instance:seleniumtest1.Menumanagement@1aafa419]" started-at="2023-10-13T00:18:57 IST" name="open_url" finished-at="2023-10-13T00:19:02 IST" duration-ms="5018" status="PASS">
+
+  <suite started-at="2023-10-09T00:22:59 IST" name="Default suite" finished-at="2023-10-09T00:23:52 IST" duration-ms="52527">
+  <groups>
+   </groups>
+    <test started-at="2023-10-09T00:22:59 IST" name="Default test" finished-at="2023-10-09T00:23:52 IST" duration-ms="52527">
+      <class name="seleniumtest1.Reviewpagetest">
+        <test-method signature="open_url()[pri:0, instance:seleniumtest1.Reviewpagetest@48f2bd5b]" started-at="2023-10-09T00:22:59 IST" name="open_url" finished-at="2023-10-09T00:23:19 IST" duration-ms="20034" status="PASS">
+
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_url -->
@@ -30,4 +39,8 @@
       </class> <!-- seleniumtest1.Menumanagement -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
+        </test-method>
+      </class>
+      
+      
 </testng-results>

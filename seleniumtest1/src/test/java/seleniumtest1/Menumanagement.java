@@ -64,7 +64,7 @@ public class Menumanagement {
 			 driver.findElement(By.xpath("//select[@id='parent_cat_id']")).sendKeys("soup");
 			 Thread.sleep(2000);
 			 //driver.findElement(By.xpath("//button[normalize-space()='Reset']")).click(); 
-			 Thread.sleep(5000);
+			 //Thread.sleep(5000);
 			driver.findElement(By.xpath("//button[normalize-space()='Submit']")).click(); 
 		 }
 		 @Test(priority=4)
