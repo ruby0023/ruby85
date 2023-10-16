@@ -19,6 +19,7 @@ public class Backendreservation1 {
 		 driver.manage().window().maximize();
 		 driver.get("https://merchant.ellmenusdev.com/login");
 	 }
+	 // for open review page
 	 @Test(priority=1)
 	 public void openreservationpage() throws InterruptedException {
 		 driver.findElement(By.xpath("//input[@id='login-email']")).sendKeys("ellmenus");
