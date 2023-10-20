@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumtest1.Merchant1registrationpage">
+      <class name="seleniumtest1.Frontreservation">
         <methods>
-          <include name="useraccount_1"/>
-          <include name="open_url"/>
-          <include name="useraccount_2"/>
+          <include name="waitinglist"/>
+          <include name="eventlist"/>
         </methods>
-      </class> <!-- seleniumtest1.Merchant1registrationpage -->
+      </class> <!-- seleniumtest1.Frontreservation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

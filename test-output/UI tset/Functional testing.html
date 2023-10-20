@@ -1,0 +1,293 @@
+<html>
+<head>
+<title>TestNG:  Functional testing</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Functional testing</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>26/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Oct 19 16:40:40 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>484 seconds (484408 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='seleniumtest1.Frontreservation.openview_page()'><b>openview_page</b><br>Test class: seleniumtest1.Frontreservation</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;icon-bx reservationAction blob&quot; style=&quot;#00b4b3&quot;&gt;...&lt;/div&gt; is not clickable at point (583, 388). Other element would receive the click: &lt;img class=&quot;bg_shadow_image&quot; src=&quot;/assets/images/national-day/middle_shadow.png&quot; alt=&quot;image&quot;&gt;
+  (Session info: chrome=118.0.5993.71)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e896e30805216499534139708686155d, clickElement {id=982E9B3AB387F26864B8A41C3EAB5376_element_50}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.71, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53136}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53136/devtoo..., se:cdpVersion: 118.0.5993.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e896e30805216499534139708686155d)] -&gt; xpath: //*[@id=&quot;tabs-links-full&quot;]/li[3]/a/div]
+Session ID: e896e30805216499534139708686155d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at seleniumtest1.Frontreservation.openview_page(Frontreservation.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace973615092", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace973615092'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;icon-bx reservationAction blob&quot; style=&quot;#00b4b3&quot;&gt;...&lt;/div&gt; is not clickable at point (583, 388). Other element would receive the click: &lt;img class=&quot;bg_shadow_image&quot; src=&quot;/assets/images/national-day/middle_shadow.png&quot; alt=&quot;image&quot;&gt;
+  (Session info: chrome=118.0.5993.71)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e896e30805216499534139708686155d, clickElement {id=982E9B3AB387F26864B8A41C3EAB5376_element_50}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.71, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53136}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53136/devtoo..., se:cdpVersion: 118.0.5993.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e896e30805216499534139708686155d)] -&gt; xpath: //*[@id=&quot;tabs-links-full&quot;]/li[3]/a/div]
+Session ID: e896e30805216499534139708686155d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at seleniumtest1.Frontreservation.openview_page(Frontreservation.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>17</td>
+<td>seleniumtest1.Frontreservation@74235045</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='seleniumtest1.Reviewpagetest.open_url()'><b>open_url</b><br>Test class: seleniumtest1.Reviewpagetest</td>
+<td></td>
+<td>3</td>
+<td>seleniumtest1.Reviewpagetest@5e0e82ae</td></tr>
+<tr>
+<td title='seleniumtest1.Menumanagement.productadd2()'><b>productadd2</b><br>Test class: seleniumtest1.Menumanagement</td>
+<td></td>
+<td>1</td>
+<td>seleniumtest1.Menumanagement@51399530</td></tr>
+<tr>
+<td title='seleniumtest1.Menumanagement.loginpage()'><b>loginpage</b><br>Test class: seleniumtest1.Menumanagement</td>
+<td></td>
+<td>37</td>
+<td>seleniumtest1.Menumanagement@51399530</td></tr>
+<tr>
+<td title='seleniumtest1.Backendreservation1.openreservationpage1()'><b>openreservationpage1</b><br>Test class: seleniumtest1.Backendreservation1</td>
+<td></td>
+<td>30</td>
+<td>seleniumtest1.Backendreservation1@6771beb3</td></tr>
+<tr>
+<td title='seleniumtest1.Merchant1registrationpage.open_url()'><b>open_url</b><br>Test class: seleniumtest1.Merchant1registrationpage</td>
+<td></td>
+<td>24</td>
+<td>seleniumtest1.Merchant1registrationpage@1bb5a082</td></tr>
+<tr>
+<td title='seleniumtest1.Todaymenuquick.opentoday_menu()'><b>opentoday_menu</b><br>Test class: seleniumtest1.Todaymenuquick</td>
+<td></td>
+<td>26</td>
+<td>seleniumtest1.Todaymenuquick@618b19ad</td></tr>
+<tr>
+<td title='seleniumtest1.Reviewpagetest.openview_page()'><b>openview_page</b><br>Test class: seleniumtest1.Reviewpagetest</td>
+<td></td>
+<td>33</td>
+<td>seleniumtest1.Reviewpagetest@5e0e82ae</td></tr>
+<tr>
+<td title='seleniumtest1.Eventbooking.openreservationpage()'><b>openreservationpage</b><br>Test class: seleniumtest1.Eventbooking</td>
+<td></td>
+<td>34</td>
+<td>seleniumtest1.Eventbooking@2d3379b4</td></tr>
+<tr>
+<td title='seleniumtest1.Todaymenuquick.opentoday_qucikmenu()'><b>opentoday_qucikmenu</b><br>Test class: seleniumtest1.Todaymenuquick</td>
+<td></td>
+<td>4</td>
+<td>seleniumtest1.Todaymenuquick@618b19ad</td></tr>
+<tr>
+<td title='seleniumtest1.Part1.open_url()'><b>open_url</b><br>Test class: seleniumtest1.Part1</td>
+<td></td>
+<td>13</td>
+<td>seleniumtest1.Part1@30c15d8b</td></tr>
+<tr>
+<td title='seleniumtest1.Backendreservation1.open_url()'><b>open_url</b><br>Test class: seleniumtest1.Backendreservation1</td>
+<td></td>
+<td>6</td>
+<td>seleniumtest1.Backendreservation1@6771beb3</td></tr>
+<tr>
+<td title='seleniumtest1.Menumanagement.open_url()'><b>open_url</b><br>Test class: seleniumtest1.Menumanagement</td>
+<td></td>
+<td>3</td>
+<td>seleniumtest1.Menumanagement@51399530</td></tr>
+<tr>
+<td title='seleniumtest1.Frontreservation.open_url()'><b>open_url</b><br>Test class: seleniumtest1.Frontreservation</td>
+<td></td>
+<td>2</td>
+<td>seleniumtest1.Frontreservation@74235045</td></tr>
+<tr>
+<td title='seleniumtest1.Eventbooking.openreservationpage1()'><b>openreservationpage1</b><br>Test class: seleniumtest1.Eventbooking</td>
+<td></td>
+<td>4</td>
+<td>seleniumtest1.Eventbooking@2d3379b4</td></tr>
+<tr>
+<td title='seleniumtest1.Menumanagement.productadd()'><b>productadd</b><br>Test class: seleniumtest1.Menumanagement</td>
+<td></td>
+<td>15</td>
+<td>seleniumtest1.Menumanagement@51399530</td></tr>
+<tr>
+<td title='seleniumtest1.Merchant1registrationpage.useraccount_1()'><b>useraccount_1</b><br>Test class: seleniumtest1.Merchant1registrationpage</td>
+<td></td>
+<td>24</td>
+<td>seleniumtest1.Merchant1registrationpage@1bb5a082</td></tr>
+<tr>
+<td title='seleniumtest1.Reviewpagetest.cart_payment()'><b>cart_payment</b><br>Test class: seleniumtest1.Reviewpagetest</td>
+<td></td>
+<td>17</td>
+<td>seleniumtest1.Reviewpagetest@5e0e82ae</td></tr>
+<tr>
+<td title='seleniumtest1.Backendreservation1.openreservationpage()'><b>openreservationpage</b><br>Test class: seleniumtest1.Backendreservation1</td>
+<td></td>
+<td>35</td>
+<td>seleniumtest1.Backendreservation1@6771beb3</td></tr>
+<tr>
+<td title='seleniumtest1.Menumanagement.menumanagement_menu()'><b>menumanagement_menu</b><br>Test class: seleniumtest1.Menumanagement</td>
+<td></td>
+<td>7</td>
+<td>seleniumtest1.Menumanagement@51399530</td></tr>
+<tr>
+<td title='seleniumtest1.Part1.registration()'><b>registration</b><br>Test class: seleniumtest1.Part1</td>
+<td></td>
+<td>30</td>
+<td>seleniumtest1.Part1@30c15d8b</td></tr>
+<tr>
+<td title='seleniumtest1.Merchant1registrationpage.useraccount_2()'><b>useraccount_2</b><br>Test class: seleniumtest1.Merchant1registrationpage</td>
+<td></td>
+<td>16</td>
+<td>seleniumtest1.Merchant1registrationpage@1bb5a082</td></tr>
+<tr>
+<td title='seleniumtest1.Menumanagement.productadd1()'><b>productadd1</b><br>Test class: seleniumtest1.Menumanagement</td>
+<td></td>
+<td>8</td>
+<td>seleniumtest1.Menumanagement@51399530</td></tr>
+<tr>
+<td title='seleniumtest1.Todaymenuquick.open_url()'><b>open_url</b><br>Test class: seleniumtest1.Todaymenuquick</td>
+<td></td>
+<td>3</td>
+<td>seleniumtest1.Todaymenuquick@618b19ad</td></tr>
+<tr>
+<td title='seleniumtest1.Reviewpagetest.cart_value()'><b>cart_value</b><br>Test class: seleniumtest1.Reviewpagetest</td>
+<td></td>
+<td>20</td>
+<td>seleniumtest1.Reviewpagetest@5e0e82ae</td></tr>
+<tr>
+<td title='seleniumtest1.Part1.openpage()'><b>openpage</b><br>Test class: seleniumtest1.Part1</td>
+<td></td>
+<td>38</td>
+<td>seleniumtest1.Part1@30c15d8b</td></tr>
+<tr>
+<td title='seleniumtest1.Eventbooking.open_url()'><b>open_url</b><br>Test class: seleniumtest1.Eventbooking</td>
+<td></td>
+<td>21</td>
+<td>seleniumtest1.Eventbooking@2d3379b4</td></tr>
+</table><p>
+</body>
+</html>

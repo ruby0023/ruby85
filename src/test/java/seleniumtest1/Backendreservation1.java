@@ -65,7 +65,7 @@ public class Backendreservation1 {
 			Thread.sleep(2000);
 			driver.findElement(By.xpath("//input[@id='Date']")).click();
 			Thread.sleep(2000);
-			driver.findElement(By.xpath("//span[@aria-label='October 30, 2023']")).click();
+			driver.findElement(By.xpath("//span[@aria-label='October 3, 2023']")).click();
 			
 			driver.findElement(By.xpath("//input[@id='custom-time-input']")).sendKeys("09:38PM");
 			
