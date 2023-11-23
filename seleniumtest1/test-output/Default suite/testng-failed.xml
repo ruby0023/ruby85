@@ -6,6 +6,8 @@
       <class name="seleniumtest1.Menumanagement">
         <methods>
           <include name="productadd"/>
+          <include name="productadd2"/>
+          <include name="productadd1"/>
         </methods>
       </class> <!-- seleniumtest1.Menumanagement -->
     </classes>

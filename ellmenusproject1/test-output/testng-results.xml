@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-09T22:22:21 IST" name="Default suite" finished-at="2023-11-09T22:24:20 IST" duration-ms="118812">
+    <groups>
+    </groups>
+    <test started-at="2023-11-09T22:22:21 IST" name="Default test" finished-at="2023-11-09T22:24:20 IST" duration-ms="118812">
+      <class name="ellmenusproject1suit.reservatsetting2$Reservationsettingpage">
+        <test-method signature="open_url()[pri:0, instance:ellmenusproject1suit.reservatsetting2$Reservationsettingpage@47eaca72]" started-at="2023-11-09T22:22:22 IST" name="open_url" finished-at="2023-11-09T22:22:58 IST" duration-ms="36862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_url -->
+        <test-method signature="openreservationpage()[pri:1, instance:ellmenusproject1suit.reservatsetting2$Reservationsettingpage@47eaca72]" started-at="2023-11-09T22:22:58 IST" name="openreservationpage" finished-at="2023-11-09T22:23:22 IST" duration-ms="23216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openreservationpage -->
+        <test-method signature="openpayment()[pri:2, instance:ellmenusproject1suit.reservatsetting2$Reservationsettingpage@47eaca72]" started-at="2023-11-09T22:23:22 IST" name="openpayment" finished-at="2023-11-09T22:23:40 IST" duration-ms="18564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openpayment -->
+        <test-method signature="openreservatio1()[pri:3, instance:ellmenusproject1suit.reservatsetting2$Reservationsettingpage@47eaca72]" started-at="2023-11-09T22:23:40 IST" name="openreservatio1" finished-at="2023-11-09T22:24:04 IST" duration-ms="23356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openreservatio1 -->
+        <test-method signature="openviewpage()[pri:5, instance:ellmenusproject1suit.reservatsetting2$Reservationsettingpage@47eaca72]" started-at="2023-11-09T22:24:04 IST" name="openviewpage" finished-at="2023-11-09T22:24:20 IST" duration-ms="16633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openviewpage -->
+      </class> <!-- ellmenusproject1suit.reservatsetting2$Reservationsettingpage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

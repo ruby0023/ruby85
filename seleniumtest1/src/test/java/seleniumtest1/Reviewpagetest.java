@@ -30,11 +30,11 @@ public class Reviewpagetest {
 		 Thread.sleep(1000);
 		
 		 driver.findElement(By.xpath("//a[normalize-space()='Tap to Start']")).click();
-		 Thread.sleep(3000);
-		 driver.findElement(By.xpath("//label[normalize-space()='Night']")).click();
+		 Thread.sleep(5000);
+		 driver.findElement(By.xpath("//p[normalize-space()='Review']")).click();
 		 Thread.sleep(1000);
-		 driver.findElement(By.xpath("//*[@id=\"tabs-links-full\"]/li[8]/a")).click();
-		 Thread.sleep(1000);
+		 //driver.findElement(By.xpath("//*[@id=\"tabs-links-full\"]/li[8]/a")).click();
+		 //Thread.sleep(1000);
 		 driver.findElement(By.xpath("//input[@id='name']")).sendKeys("nitesh");
 		 Thread.sleep(1000);
 		driver.findElement(By.xpath("//*[@id=\"merchantRatingForm\"]/div[2]/div/div/div/div/div[1]")).click();

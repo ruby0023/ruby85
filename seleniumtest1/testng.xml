@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="UI tset">
+  <test name="Functional testing">
+    <classes>
+      <class name="seleniumtest1.Merchant1registrationpage"/>
+      <class name="seleniumtest1.Frontreservation"/>
+      <class name="seleniumtest1.Todaymenuquick"/>
+      <class name="seleniumtest1.Eventbooking"/>
+      <class name="seleniumtest1.Part1"/>
+      <class name="seleniumtest1.Reviewpagetest"/>
+      <class name="seleniumtest1.Backendreservation1"/>
+      <class name="seleniumtest1.Menumanagement"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

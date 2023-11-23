@@ -2,6 +2,7 @@ package seleniumtest1;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriver.Options;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,20 +23,24 @@ public class Todaymenuquick {
 	 @Test(priority=1)
 	 public void opentoday_menu() throws InterruptedException {
 		 driver.get("https://ellmenusdev.com/menu-friespy");
-		 Thread.sleep(1000);
+		 Thread.sleep(2000);
 		 driver.findElement(By.xpath("//a[normalize-space()='Tap to Start']")).click();
-		 Thread.sleep(3000);
-		 driver.findElement(By.xpath("//a[@class='floatingActionBtnTodayMenu']")).click(); 
-		 Thread.sleep(3000);
-		 driver.findElement(By.xpath("//div[@id='todayMenuToggle']")).click(); 
+		 Thread.sleep(5000);
+		 driver.findElement(By.xpath("//*[@id=\"tabs-links-full\"]/li[1]/a")).click(); 
+		 Thread.sleep(4000);
+		 driver.findElement(By.xpath("//*[@id=\"tabs-links-full\"]/li[1]/a")).sendKeys(Keys.ENTER);
+
+		
 	 }
 	 @Test(priority=2)
 	 public void opentoday_qucikmenu() throws InterruptedException {
+		 Thread.sleep(4000);
 		 driver.findElement(By.xpath("//a[@class='urlActionBtn']")).click();
 		
 		// driver.get("https://ellmenusdev.com/store/flippdf?slug=friespy#page/1");
 		 //driver.findElement(By.xpath("//div[@class='inner-page']//span")).click();
 		 
 		
-		 }
+		 
 	}
+}
