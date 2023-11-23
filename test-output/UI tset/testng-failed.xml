@@ -3,11 +3,27 @@
 <suite name="Failed suite [UI tset]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Functional testing(failed)">
     <classes>
-      <class name="seleniumtest1.Frontreservation">
+      <class name="seleniumtest1.Part1">
         <methods>
-          <include name="openview_page"/>
+          <include name="registration"/>
         </methods>
-      </class> <!-- seleniumtest1.Frontreservation -->
+      </class> <!-- seleniumtest1.Part1 -->
+      <class name="seleniumtest1.Menumanagement">
+        <methods>
+          <include name="categoriesadd"/>
+          <include name="productadd"/>
+          <include name="productadd2"/>
+          <include name="productadd1"/>
+          <include name="loginpage"/>
+          <include name="menumanagement_menu"/>
+        </methods>
+      </class> <!-- seleniumtest1.Menumanagement -->
+      <class name="seleniumtest1.Backendreservation1">
+        <methods>
+          <include name="openreservationpage"/>
+          <include name="openreservationpage1"/>
+        </methods>
+      </class> <!-- seleniumtest1.Backendreservation1 -->
     </classes>
   </test> <!-- Functional testing(failed) -->
 </suite> <!-- Failed suite [UI tset] -->

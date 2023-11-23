@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumtest1.Frontreservation">
+      <class name="seleniumtest1.Menumanagement">
         <methods>
-          <include name="waitinglist"/>
-          <include name="eventlist"/>
+          <include name="productadd"/>
+          <include name="productadd2"/>
+          <include name="productadd1"/>
         </methods>
-      </class> <!-- seleniumtest1.Frontreservation -->
+      </class> <!-- seleniumtest1.Menumanagement -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
