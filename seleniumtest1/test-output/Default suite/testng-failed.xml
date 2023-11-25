@@ -6,8 +6,11 @@
       <class name="seleniumtest1.Menumanagement">
         <methods>
           <include name="productadd"/>
+          <include name="categoriesadd"/>
           <include name="productadd2"/>
           <include name="productadd1"/>
+          <include name="loginpage"/>
+          <include name="menumanagement_menu"/>
         </methods>
       </class> <!-- seleniumtest1.Menumanagement -->
     </classes>

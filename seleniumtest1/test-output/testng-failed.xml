@@ -1,29 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [UI tset]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Functional testing(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumtest1.Part1">
-        <methods>
-          <include name="registration"/>
-        </methods>
-      </class> <!-- seleniumtest1.Part1 -->
       <class name="seleniumtest1.Menumanagement">
         <methods>
-          <include name="categoriesadd"/>
           <include name="productadd"/>
+          <include name="categoriesadd"/>
           <include name="productadd2"/>
           <include name="productadd1"/>
           <include name="loginpage"/>
           <include name="menumanagement_menu"/>
         </methods>
       </class> <!-- seleniumtest1.Menumanagement -->
-      <class name="seleniumtest1.Backendreservation1">
-        <methods>
-          <include name="openreservationpage"/>
-          <include name="openreservationpage1"/>
-        </methods>
-      </class> <!-- seleniumtest1.Backendreservation1 -->
     </classes>
-  </test> <!-- Functional testing(failed) -->
-</suite> <!-- Failed suite [UI tset] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
